@@ -7,7 +7,7 @@ This C++ template lets you get started quickly with a simple one-page playground
 #include <iostream>
 
 int main() {
-    const std::function<std::size_t (const std::size_t)> f_fib = [&f_fib](const std::size_t v) {
+    const std::function<std::size_t (const std::size_t)> f_fib = [&f_fib](const std::size_t v) noexcept {
         if (v <= 1)
             return v;
 
